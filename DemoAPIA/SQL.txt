@@ -1,0 +1,17 @@
+insert into Products values ('LAPTOP', 5000, 1)
+insert into Products values ('NOTEBOOK', 4000, 1)
+insert into Products values ('PC', 3000, 1)
+insert into Products values ('MOUSE', 200, 1)
+insert into Products values ('LAPICERO', 100, 1)
+insert into Products values ('LAPIZ', 50, 1)
+
+insert into Invoices (DateTime, InvoicesNumber, Total, CustomerID) values (GETDATE(), 0001, 150, 1)
+insert into Invoices (DateTime, InvoicesNumber, Total, CustomerID) values (GETDATE(), 0002, 250, 2)
+insert into Invoices (DateTime, InvoicesNumber, Total, CustomerID) values (GETDATE(), 0003, 50, 3)
+insert into Invoices (DateTime, InvoicesNumber, Total, CustomerID) values (GETDATE(), 0004, 350, 1)
+insert into Invoices (DateTime, InvoicesNumber, Total, CustomerID) values (GETDATE(), 0005, 100, 3)
+insert into Invoices (DateTime, InvoicesNumber, Total, CustomerID) values (GETDATE(), 0006, 200, 2)
+
+insert into Customers values ('Luis', 'Gastelu', '797478451', 1)
+insert into Customers values ('Antonio', 'Gonzalo', '123456789', 1)
+insert into Customers values ('Javier', 'Ramirez', '123456781', 1)
