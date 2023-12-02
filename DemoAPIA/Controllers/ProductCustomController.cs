@@ -10,44 +10,44 @@ namespace DemoAPIA.Controllers
     public class ProductCustomController : ControllerBase
     {
 
-        private readonly InvoiceContext _context;
+        //private readonly InvoiceContext _context;
 
-        public ProductCustomController(InvoiceContext context)
-        {
-            _context = context;
-        }
+        //public ProductCustomController(InvoiceContext context)
+        //{
+        //    _context = context;
+        //}
 
-        [HttpGet]
-        public List<Product> GetProductWithCategoryName(string CategoryName)
-        {
+        //[HttpGet]
+        //public List<Product> GetProductWithCategoryName(string CategoryName)
+        //{
             //Inner Join para inclusion de categoria y producto
-            var response = _context.Products.Include(x => x.Category).
-                Where(x => x.Category.Name.Contains(CategoryName)).
-                ToList();
+            //var response = _context.Products.Include(x => x.Category).
+            //    Where(x => x.Category.Name.Contains(CategoryName)).
+            //    ToList();
 
-            return response;
-        }
+            //return response;
+        //}
 
-        [HttpGet]
-        public List<Product> GetProductWithCategory()
-        {
+        //[HttpGet]
+        //public List<Product> GetProductWithCategory()
+        //{
             //Inner Join para inclusion de categoria y producto
-            var response = _context.Products.Include(x => x.Category).ToList();
+            //var response = _context.Products.Include(x => x.Category).ToList();
 
-            return response;
-        }
+            //return response;
+        //}
 
-        [HttpGet]
-        public List<Product> GetProductsWithCategoryNameDescending(string categoryName)
-        {
+        //[HttpGet]
+        //public List<Product> GetProductsWithCategoryNameDescending(string categoryName)
+        //{
 
-            var response = _context.Products.Include(x => x.Category).
-                Where(x => x.Category.Name.Contains(categoryName)).
-                OrderByDescending(x => x.Name)
-                .ToList();
+           // var response = _context.Products.Include(x => x.Category).
+           //     Where(x => x.Category.Name.Contains(categoryName)).
+           //     OrderByDescending(x => x.Name)
+           //     .ToList();
 
-            return response;
+           // return response;
 
-        }
+        //}
     }
 }

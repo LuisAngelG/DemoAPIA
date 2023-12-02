@@ -7,8 +7,8 @@
         public double Price { get; set; }
         public bool IsActive { get; set; }
 
-        public Category? Category { get; set; }
-        public int? CategoryID { get; set; }
+        //public Category? Category { get; set; }
+        //public int? CategoryID { get; set; }
 
     }
 }
